@@ -131,10 +131,10 @@ const LoginPage = () => {
 
   const onSubmit = data => {
     const { email, password } = data
-    auth.login({ email, password, rememberMe }, () => {
-      setError('email', {
+    auth.login({ username, password, rememberMe }, () => {
+      setError('username', {
         type: 'manual',
-        message: 'Email or Password is invalid'
+        message: 'Username or Password is invalid'
       })
     })
   }
@@ -264,18 +264,18 @@ const LoginPage = () => {
             <form noValidate autoComplete='off' onSubmit={handleSubmit(onSubmit)}>
               <FormControl fullWidth sx={{ mb: 4 }}>
                 <Controller
-                  name='email'
+                  name='username'
                   control={control}
                   rules={{ required: true }}
                   render={({ field: { value, onChange, onBlur } }) => (
                     <TextField
                       autoFocus
-                      label='Email'
+                      label='Username'
                       value={value}
                       onBlur={onBlur}
                       onChange={onChange}
-                      error={Boolean(errors.email)}
-                      placeholder='admin@materialize.com'
+                      error={Boolean(errors.username)}
+                      placeholder='admin'
                     />
                   )}
                 />

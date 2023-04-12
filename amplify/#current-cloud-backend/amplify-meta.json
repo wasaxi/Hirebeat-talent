@@ -1,0 +1,56 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify23381870c2984-staging-210026-authRole",
+      "UnauthRoleArn": "arn:aws:iam::677613331762:role/amplify-amplify23381870c2984-staging-210026-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::677613331762:role/amplify-amplify23381870c2984-staging-210026-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-amplify23381870c2984-staging-210026-deployment",
+      "UnauthRoleName": "amplify-amplify23381870c2984-staging-210026-unauthRole",
+      "StackName": "amplify-amplify23381870c2984-staging-210026",
+      "StackId": "arn:aws:cloudformation:us-east-2:677613331762:stack/amplify-amplify23381870c2984-staging-210026/e2275870-d8ab-11ed-aaec-02b3435797e6",
+      "AmplifyAppId": "d2qnma4z5e13uz"
+    }
+  },
+  "auth": {
+    "hirebeattalentac9d23bc": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify23381870c2984-staging-210026-deployment/amplify-cfn-templates/auth/hirebeattalentac9d23bc-cloudformation-template.json",
+        "logicalId": "authhirebeattalentac9d23bc"
+      },
+      "lastPushTimeStamp": "2023-04-11T21:25:05.012Z",
+      "output": {
+        "UserPoolId": "us-east-2_SYEE1aPAB",
+        "AppClientIDWeb": "76r1666p4b2qclbsv7velio61h",
+        "AppClientID": "2v9u801782lqecu8gakr7m73pm",
+        "IdentityPoolId": "us-east-2:6cf8ee2e-3c29-4547-a94d-906b787e4dd5",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-2:677613331762:userpool/us-east-2_SYEE1aPAB",
+        "IdentityPoolName": "hirebeattalentac9d23bc_identitypool_ac9d23bc__staging",
+        "UserPoolName": "hirebeattalentac9d23bc_userpool_ac9d23bc"
+      },
+      "lastPushDirHash": "qSpVBZeIX90pbsYss18mRquc9I0="
+    }
+  }
+}
